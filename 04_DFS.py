@@ -1,3 +1,7 @@
+"""用python实现深度优先搜索，
+    创建图类，图节点类
+    最后dfs_search为实现算法主函数"""
+
 class GraphNode:
     """定义图节点类，包含节点值以及节点相邻节点"""
     def __init__(self, value):
@@ -43,7 +47,7 @@ def dfs_search(start_node, search_value):
     stack = [start_node]
 
     #遍历数据
-    while stack != None:
+    while len(stack) > 0:
         cur_node = stack.pop()
 
         """对于深度优先搜索，若节点已经访问过，则直接结束，避免死循环"""
@@ -63,3 +67,19 @@ def dfs_search(start_node, search_value):
                 stack.append(ele)
 
     return None
+
+
+"""测试"""
+nodeG = GraphNode('G')
+nodeR = GraphNode('R')
+nodeA = GraphNode('A')
+
+graph = Graph([nodeG, nodeA, nodeR])
+graph.add_edge(nodeG, nodeR)
+graph.add_edge(nodeA, nodeR)
+
+result = dfs_search(nodeG, 'U')
+if result:
+    print("you got it! ", result.value)
+else:
+    print('None')
