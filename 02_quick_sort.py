@@ -29,6 +29,8 @@ def quick_sort(arr, low, high):
     quick_sort(arr, mid+1, high)
 
 
+# 测试用例
+
 array = [8, 3, 10, 7, 0, 10, 2, 156, 141, 35, 4, 88, 4, 61, 111]
 start_time = time.time()
 
