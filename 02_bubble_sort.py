@@ -6,11 +6,14 @@ def bubble_sort(list):
     相比于选择排序，每次比较可能都要交换，效率低
     """
     for i in range(len(list)):
-
+        isSwap = False
         #由于排一次，最后一个元素为max，故跳过比较-->len(list)-1-i
         for j in range(len(list)-1-i):
             if list[j] > list[j+1]:
                 list[j], list[j+1] = list[j+1], list[j]
+                isSwap = True
+        if not isSwap:
+            return list
 
     return list
 
@@ -18,7 +21,7 @@ def bubble_sort(list):
 array = [8, 3, 10, 7, 0, 10, 2, 156, 141, 35, 4, 88, 4, 61, 111]
 start_time = time.time()
 
-time.sleep(2)
+time.sleep(0.1)
 bubble_sort(array)
 
 period = time.time() - start_time
