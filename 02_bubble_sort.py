@@ -6,7 +6,7 @@ def bubble_sort(list):
     相比于选择排序，每次比较可能都要交换，效率低
     """
     for i in range(len(list)):
-        isSwap = False
+        isSwap = False  # 交换标志位
         #由于排一次，最后一个元素为max，故跳过比较-->len(list)-1-i
         for j in range(len(list)-1-i):
             if list[j] > list[j+1]:

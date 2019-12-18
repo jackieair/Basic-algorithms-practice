@@ -9,14 +9,14 @@ def count_Sort(arr):
     # 找出数组最大数
     max_num = max(arr)
 
-    # 初始化计数数组
+    # 初始化计数数组,最大为多少就多少长
     count_arr = [0 for _ in range(max_num+1)]
 
     # 计数
     for num in arr:
         count_arr[num] += 1
 
-    # 排序
+    # 写入原数组
     index = 0
     for i in range(max_num+1):
         while count_arr[i] > 0:
