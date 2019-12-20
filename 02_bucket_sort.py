@@ -14,7 +14,7 @@ def bucket_Sort(array):
     diff = max_num - min_num
 
     # 知道长度和差值，即可确定区间长度
-    section = diff // length + 1  # 加1是关键
+    section = diff // length + 1  # 加1是关键，关键，关键
 
     # 数据入桶
     for num in array:

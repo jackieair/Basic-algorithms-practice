@@ -1,3 +1,9 @@
+"""归并排序核心思想---分而治之
+   merge合并时间复杂度为O(N),分解数组对半切割时间复杂度为O(logn),;
+   总的时间为O(nlogn)=logN层
+   空间复杂度O(n)
+"""
+
 def merge_sort(arr):
     lens = len(arr)
     if lens <= 1:
