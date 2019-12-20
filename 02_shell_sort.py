@@ -26,5 +26,5 @@ def shell_sort(array):
 
 # Test
 arr = [4, 1, 11, 7, 8, 2, 3, 5, 24, 5, 43, 22, 19]
-hill_sort(arr)
+shell_sort(arr)
 print(arr)
