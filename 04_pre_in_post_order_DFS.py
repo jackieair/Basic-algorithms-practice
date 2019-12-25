@@ -73,6 +73,7 @@ def postorder(root):
         # 存入stack2
         stack2.append(node)
 
+    # 遍历stack2
     while stack2:
         node = stack.pop()
         rsl = append(node)  # 将逆序结果存入rsl中
