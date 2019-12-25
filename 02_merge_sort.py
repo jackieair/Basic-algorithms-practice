@@ -32,6 +32,7 @@ def merge(l_arr, r_arr):
             r_idx += 1
 
     if len(l_arr[l_idx:]) > 0:
+        # 注意idx索引
         arr = arr + l_arr[l_idx:]
     if len(r_arr[r_idx:]) > 0:
         arr = arr + r_arr[r_idx:]
