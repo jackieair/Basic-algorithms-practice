@@ -13,10 +13,11 @@ def merge_sort(arr):
     left = arr[:mid]
     right = arr[mid:]
 
-    l_arr = merge_sort(left)
-    r_arr = merge_sort(right)
+    left = merge_sort(left)
+    right = merge_sort(right)
 
-    return merge(l_arr, r_arr)
+    return merge(left, right)
+
 
 def merge(l_arr, r_arr):
     arr = []
@@ -39,4 +40,4 @@ def merge(l_arr, r_arr):
 
     return arr
 
-print(merge_sort([8,3,1,7,0,10,2]))
+print(merge_sort([8,23,12,3,13,1,7,0,10,2]))

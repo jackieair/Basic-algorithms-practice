@@ -37,7 +37,7 @@ def heapSort(arr):
     # 逐个提取元素
     for i in range(n-1, 0, -1):
         arr[i], arr[0] = arr[0], arr[i]  # 交换
-        heapfy(arr, i, 0)
+        heapfy(arr, i, 0)  # 提取元素还剩i个数，从0处堆化
 
     return
 

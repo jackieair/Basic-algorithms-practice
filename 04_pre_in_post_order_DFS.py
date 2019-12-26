@@ -7,6 +7,7 @@ class TreeNode:
          self.right = None
 
 
+
 def preorder(root):
     """
     深度优先搜索之先序遍历
@@ -32,6 +33,8 @@ def preorder(root):
     return rsl
 
 
+
+
 def inorder(root):
     """
     深度优先搜索之中序遍历
@@ -50,6 +53,8 @@ def inorder(root):
         rsl.append(node.val)  # 在这记录
         node = node.right
     return rsl
+
+
 
 
 def postorder(root):
